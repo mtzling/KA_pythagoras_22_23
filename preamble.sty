@@ -1,0 +1,242 @@
+% Diese Datei sollte nicht verändert werden. Die Einstellungen zm Deckblatt
+% finden sich in den "Voreinstellungen". Aufgaben werden in der Datei "Aufgaben"
+% erstellt und editiert.
+\usepackage
+[
+        a4paper,
+        left=2cm,
+        right=3cm,
+        top=2cm,
+]{geometry}
+\runningheader{\ifcontinuation{Fortsetzung Aufgabe \ContinuedQuestion\ \ldots}{}}{Seite \thepage\ von \numpages}{\oddeven{}{\framebox(160,30){$\;$ Name: \hfill}}}
+\runningheadrule
+\runningfootrule
+\runningfooter{}{}{\ifincomplete{Aufgabe \IncompleteQuestion\ wird auf der nächsten Seite fortgesetzt}{}}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{pst-all}\psset{unit=1cm}
+\usepackage{xstring}
+\usepackage{xintexpr}
+\usepackage{xfp}
+\usepackage{readarray}
+\usepackage{ifthen}
+%   Anpassung Exam Class
+%Lokalisierung
+\hqword{Aufgabe Nr.:}
+\hpword{BE:}
+\htword{\textbf{Summe}}
+\hsword{Davon erreicht:}
+\renewcommand{\solutiontitle}{\noindent\textbf{Lösung:}\enspace}
+\pointpoints{BE}{BE}
+\bonuspointpoints{BE (bonus)}{BE (bonus)}
+
+%Anpassung der Labels
+\renewcommand{\partlabel}{\thepartno)}
+\renewcommand{\subpartlabel}{(\thesubpart.)}
+
+%Sonstige Formatierungen
+\addpoints
+\bracketedpoints
+\pointsdroppedatright
+\marginpointname{ \points}
+\pointformat{\thepoints}
+%\qformat{{\textbf{Aufgabe \thequestion}}  \hfill \underline{\hspace{0.5cm}} / \thepoints}
+\qformat{{\textbf{Aufgabe \thequestion \hfill}} }
+\totalformat{\framebox(140,30){Erreicht: \underline{\hspace{0.7cm}} von \totalpoints \hspace*{0.03cm} BE}}
+%\totalformat{Erreicht: \underline{\hspace{0.7cm}} von \totalpoints \hspace*{0.03cm} BE}
+\usepackage{tikz}
+\usetikzlibrary{quotes,arrows.meta}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,angles,quotes,intersections,babel}
+\tikzset{
+  annotated cuboid/.pic={
+    \tikzset{%
+      every edge quotes/.append style={midway, auto},
+      /cuboid/.cd,
+      #1
+    }
+    \draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
+    (0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
+    (o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
+    (o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
+    \path [every edge/.append style={pic actions, |-|}]
+    (b) +(0,-5pt) coordinate (b1) edge ["\cubex \cubeunits"'] (b1 -| c)
+    (b) +(-5pt,0) coordinate (b2) edge ["\cubey \cubeunits"] (b2 |- a)
+    (c) +(3.5pt,-3.5pt) coordinate (c2) edge ["\cubez \cubeunits"'] ([xshift=3.5pt,yshift=-3.5pt]e)
+    ;
+  },
+  /cuboid/.search also={/tikz},
+  /cuboid/.cd,
+  width/.store in=\cubex,
+  height/.store in=\cubey,
+  depth/.store in=\cubez,
+  units/.store in=\cubeunits,
+  scale/.store in=\cubescale,
+  width=10,
+  height=10,
+  depth=10,
+  units=cm,
+  scale=.1,
+}
+\usepackage{comment}
+\usepackage{calculator}
+\usepackage{enumitem} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{pgfplots}
+    \pgfplotsset{compat=1.18} %sonst backwardscompatible warning
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {./bilder/} }
+\usepackage[german]{babel}
+\usepackage{dashrule}
+\usepackage{color}
+	\colorgrids
+	\definecolor{GridColor}{rgb}{0.05, 0.05, 0.05}
+	\shadedsolutions
+\usepackage{colortbl}
+    \newcolumntype{g}{>{\columncolor{Gray}}c}
+
+\newcommand{\afb}[1]{\ifprintanswers AFB #1 \fi}
+
+\newcommand{\gridsolution}[2]{\begin{solutionorgrid}[#2]
+\begin{minipage}[t][#2][t]{14cm}
+#1
+\end{minipage}
+\end{solutionorgrid}}
+
+\newcommand{\dotlinesolution}[2]{\begin{solutionordottedlines}[#2]
+\begin{minipage}[t][#2][t]{14cm}
+#1
+\end{minipage}
+\end{solutionordottedlines}}
+
+\newcommand{\fillinsol}[1]{\textbf{\textcolor{black}{\fillin[#1]}}}
+%do midfill, shortfill,longfill
+\newcommand{\tf}[1][{}]{\fillin[#1][0.25in]}
+\newcommand{\loeslin}{\underline{\hspace*{1.5cm}}}
+\newcommand{\loeslinl}{\underline{\hspace*{3cm}}}
+
+
+%Variable für Anzahl der Fragen
+\AtEndDocument{%
+  \ifdefined\exam@numquestions
+    \immediate\write\@auxout{\string\total@questions{\exam@numquestions}}%
+  \fi
+}
+\newcommand{\total@questions}[1]{\gdef\totalquestions{#1}}
+\providecommand{\totalquestions}{1}
+\makeatother
+
+
+\newcommand{\hier}{\includegraphics[height=2.5ex]{BildHier.jpg}}
+\newcommand{\R}{{\rm I\!R}}
+\newcommand{\N}{{\rm I\!N}}
+\newcommand{\myskip}{ \vspace{2mm}}
+\newcommand{\skippy}{ \hspace{7mm}}
+\newcommand{\Log}{{\rm Log}\,}
+\renewcommand{\ln}{{\rm ln}\,}
+
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+\newcolumntype{G}{>{\columncolor{Gray}}C}
+\usepackage{tabularray}
+
+%Eurozeichen
+\usepackage{textcomp}
+\usepackage{eurosym}
+
+\checkboxchar{$\Box$}
+\checkedchar{$\blacksquare$}
+
+
+% fuer Pythagoras
+\usepackage[font=small,labelfont=bf]{caption} 
+\usepackage{tkz-euclide}
+\newcommand\RechtDrei[7][dashed,red,text=red]{%
+\coordinate (#2) at #5;
+\coordinate (#4) at #6;
+\coordinate (aux) at ($ #5 ! 1 ! 90:#6 $);
+\coordinate (#3) at ($ #5 !#7!(aux) $);
+\draw 
+  (#2) -- 
+  node[auto] {$\MakeLowercase{#4}$} (#3) -- 
+  node[auto] {$\MakeLowercase{#2}$} (#4) -- 
+  node[auto] {$\MakeLowercase{#3}$} 
+  (#2);
+}
+\newcommand\RechtDreiLeer[7][dashed,red,text=red]{%
+\coordinate (#2) at #5;
+\coordinate (#4) at #6;
+\coordinate (aux) at ($ #5 ! 1 ! 90:#6 $);
+\coordinate (#3) at ($ #5 !#7!(aux) $);
+\draw 
+  (#2) -- 
+  node[auto] { } (#3) -- 
+  node[auto] { } (#4) -- 
+  node[auto] { } 
+  (#2);
+}
+
+
+\newcommand*{\IsInteger}[3]{%
+    \IfStrEq{#1}{ }{%
+        #3% is a blank string
+    }{%
+        \IfInteger{#1}{#2}{#3}%
+    }%
+}%
+
+
+\ExplSyntaxOn
+\newcommand\test[1]{
+\fp_compare:nTF{0.01 < abs(round(#1)-#1)}
+}
+\ExplSyntaxOff
+
+\newcommand{\Mult} [2] {\the\numexpr #1 * #2 \relax \\}
+\newcommand{\ceiling}[1]{\test{#1}{\the\numexpr \xintNum{#1}+1}{#1}}
+\newcommand{\BEG}[1]{\ceiling{\fpeval{#1 * \numpoints}}}
+\newcommand{\gtable}{
+    \begin{center}
+    \begin{table}[h!]
+    \renewcommand{\arraystretch}{1.2}
+    \def\x{0.6}
+    \hspace{1.5cm}\begin{tabular}{|M{1.2 cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|M{\x cm}|N}
+    \hline
+    BE& \BEG{\dataG[12,2]} & \BEG{\dataG[11,2]} & \BEG{\dataG[10,2]} & \BEG{\dataG[9,2]} & \BEG{\dataG[8,2]} & \BEG{\dataG[7,2]} & \BEG{\dataG[6,2]} & \BEG{\dataG[5,2]} & \BEG{\dataG[4,2]} & \BEG{\dataG[3,2]} & \BEG{\dataG[2,2]} & \BEG{\dataG[1,2]} &0\\ \hline\hline
+    NP  & 12& 11& 10& 9& 8& 7& 6& 5& 4& 3& 2&1&0\\ \hline
+    Note& $1+$& 1&$1-$ & $2+$& 2& $2-$& $3+$& $3$&$4+$ &$4$ & $5+$& 5&6\\ \hline\hline
+    Anzahl& & & & & & & & & & & & & &\\ \hline
+    \end{tabular}
+    \end{table}
+    \end{center}
+}
+
+\newcommand{\etable}{
+    \begin{center}
+    \begin{table}[h!]
+    \renewcommand{\arraystretch}{1.2}
+    \def\y{0.5}
+    \hspace{1.5cm}\begin{tabular}{|M{1.2 cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|M{\y cm}|N}
+    \hline
+    BE& \BEG{\dataG[15,3]} & \BEG{\dataG[14,3]} & \BEG{\dataG[13,3]} & \BEG{\dataG[12,3]} & \BEG{\dataG[11,3]} & \BEG{\dataG[10,3]} & \BEG{\dataG[9,3]}& \BEG{\dataG[8,3]}& \BEG{\dataG[7,3]}& \BEG{\dataG[6,3]} & \BEG{\dataG[5,3]} & \BEG{\dataG[4,3]} & \BEG{\dataG[3,3]} & \BEG{\dataG[2,3]} & \BEG{\dataG[1,3]} &0\\ \hline\hline
+    NP  &15 &14&13& 12& 11& 10& 9& 8& 7& 6& 5& 4& 3& 2&1&0\\ \hline
+    Note& $1+$& 1&$1-$ & $2+$& 2& $2-$& $3+$& $3$&$3-$&$4+$ &$4$ &$4-$& $5+$& 5&$5-$&6\\ \hline \hline
+    Anzahl& & & & & & & & & & & & & & & & &\\ \hline
+    \end{tabular}
+    \end{table}
+    \end{center}
+}

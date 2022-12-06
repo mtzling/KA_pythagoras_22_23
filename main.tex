@@ -1,0 +1,18 @@
+% Diese Datei sollte nicht verändert werden. Die Einstellungen zm Deckblatt
+% finden sich in den "Voreinstellungen". Aufgaben werden in der Datei "Aufgaben"
+% erstellt und editiert.
+\documentclass[addpoints,11pt]{exam}
+\usepackage{preamble}
+%\printanswers %auskommentieren, um keine Loesungen zu sehen
+\begin{document}
+\input{voreinstellungen.tex}
+\input{deckblatt.tex}
+\newpage
+\extraheadheight{0.7cm}
+\extrafootheight{-1.5cm}
+\firstpageheader{}{Seite \thepage\ von \numpages}{}
+\begin{questions}
+\input{aufgaben.tex}
+\nomorequestions
+\end{questions}
+\end{document}
