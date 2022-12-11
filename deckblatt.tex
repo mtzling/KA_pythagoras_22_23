@@ -57,6 +57,12 @@ Du hast \underline{\hspace*{1.5cm}} BE erreicht. Das sind \underline{\hspace*{1.
 \end{center}
 
 \vfill
-\ifthenelse{\equal{\ntable}{G}}{\gtable}{\etable}
+
+\newcommand{\tabledef}{G}
+\textbf{Notenspiegel}
+\vspace*{-0.6cm}
+\ifthenelse{\equal{\ntable}{\tabledef}}{\gtable}{\etable}
+\centering \vspace*{-1cm}
+$\varnothing =$
 \end{coverpages}
 \restoregeometry

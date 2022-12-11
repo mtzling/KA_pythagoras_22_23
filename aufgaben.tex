@@ -21,7 +21,7 @@
 % \droptotalpoints
 
 \question[3]
-Benenne die restlichen Winkel, Kanten und Ecken des Dreiecks auf korrekte Weise.\bigskip 
+Benenne die restlichen Winkel, Kanten und Ecken des Dreiecks auf korrekte Weise. \hier \bigskip 
 
 \begin{tikzpicture}[thick, scale=0.8]
     \node [anchor=south east] at (0, 2) {B};
@@ -33,8 +33,8 @@ Benenne die restlichen Winkel, Kanten und Ecken des Dreiecks auf korrekte Weise.
 
 \droptotalpoints
 
-\question[3]
-Finde die rechtwinkligen Dreiecke. Markiere den rechten Winkel und die Hypothenuse. \hier
+\question[2]
+Markiere den rechten Winkel und die Hypotenuse in den rechtwinkligne Dreiecken. \hier
 
 \begin{tikzpicture}[scale=0.7,
   my angle/.style={
@@ -43,30 +43,18 @@ Finde die rechtwinkligen Dreiecke. Markiere den rechten Winkel und die Hypothenu
     angle radius=0.5cm,
   }]
 \RechtDreiLeer{C}{B}{A}{(0,1)}{(3,0)}{3cm}
-\RechtDreiLeer{C}{B}{A}{(3.5,2)}{(5,1)}{4cm}
+%\RechtDreiLeer{C}{B}{A}{(3.5,2)}{(5,1)}{4cm}
 \RechtDreiLeer{C}{B}{A}{(10,3)}{(7,4)}{4cm}
-\draw 
-  (11,0) -- 
-  node[auto] {} (12,4) -- 
-  node[auto] {} (16,1.5) -- 
-  node[auto] {} (11,0);
+
 %\RechtDreiLeer{C}{B}{A}{(18,1)}{(19,3)}{6cm}
 \end{tikzpicture}\par\bigskip
 
 \droptotalpoints
 
-\question[3]
+\question[2]
 Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
 
-\begin{minipage}[t][3cm][t]{0.3 \textwidth}
-\begin{center}
-\begin{tikzpicture}[scale=0.5]
-\RechtDrei{c}{b}{a}{(0,1)}{(3,0)}{3cm}
-\end{tikzpicture}\par\bigskip
-\gridsolution{leer}{1cm}
-\end{center}
-\end{minipage}
-\begin{minipage}[t][3cm][t]{0.3 \textwidth}
+\begin{minipage}[t][3cm][t]{0.4 \textwidth}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
 \RechtDrei{l}{k}{m}{(1,3)}{(1,1)}{3cm}
@@ -74,7 +62,7 @@ Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
 \gridsolution{leer}{1cm}
 \end{center}
 \end{minipage}
-\begin{minipage}[t][3cm][t]{0.3 \textwidth}
+\begin{minipage}[t][3cm][t]{0.4 \textwidth}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
 \RechtDrei{s}{u}{t}{(7,-2)}{(6,-3)}{3cm}
@@ -98,7 +86,7 @@ Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
 \end{minipage}%
 \begin{minipage}{0.85 \textwidth}
 \begin{parts}
-    \part[1] Kreuze die richtige Formel für die Berechnung der \textbf{Hypothenusenlänge} an. \hier
+    \part[1] Kreuze die richtige Formel für die Berechnung der \textbf{Hypotenusenlänge} an. \hier
     
     \begin{oneparcheckboxes}
         \choice $c=\sqrt{a+b}$
@@ -118,7 +106,7 @@ Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
 \end{minipage}
 
 \droptotalpoints
-
+\newpage
 \question[4]
 Berechne die fehlenden Seitenlängen der unten abgebildeten Dreiecke. \medskip
 
@@ -147,18 +135,20 @@ Berechne die fehlenden Seitenlängen der unten abgebildeten Dreiecke. \medskip
 Bring die folgenden Schritte in die Reihenfolge zur Anwendung des Satzes des Pythagoras. Setze dazu die Zahlen 1 bis 4 in die Lücken ein. \hier
 
 \item[\loeslin \textbf{Schritt:}] Schreibe die richtige Formel auf.
+\item[\loeslin \textbf{Schritt:}] Überlege, ob die Hypotenusenlänge oder die Kathetenlänge gesucht ist.
 \item[\loeslin \textbf{Schritt:}] Benenne die Seiten und trage die bekannten Größen ein.
 \item[\loeslin \textbf{Schritt:}] Markiere das rechtwinklige Dreieck und den rechten Winkel.
-\item[\loeslin \textbf{Schritt:}] Überlege, ob die Hypothenusenlänge oder die Kathetenlänge gesucht ist.
+
 
 \droptotalpoints
 \begin{comment}
 \question[3]\
 Ein Rechteck ist  30 cm breit und 17 cm breit. Berechne die Länge der Diagonale auf zwei Stellen genau. Fertige hierzu eine \underline{Skizze} an.
-\end{comment}
+
 \medskip
 
 \droptotalpoints
+\end{comment}
 \question[4]
 
 \begin{minipage}{0.4 \textwidth}
@@ -171,13 +161,28 @@ Ein Rechteck ist  30 cm breit und 17 cm breit. Berechne die Länge der Diagonale
 \end{minipage}
 
 \droptotalpoints
+
+\question[4]
+
+\begin{minipage}{0.4 \textwidth}
+  \includegraphics[scale=1]{bilder/pythagoras_drachen.PNG}
+\end{minipage}%
+\begin{minipage}{0.55 \textwidth}
+  Robert und Sandra lassen einen Drachen steigen. Robert hält die vom
+  Wind straff gespannte 80 m lange Drachenschnur. Sandra stellt sich
+  genau unter den Drachen. Sie ist 60 m von Robert entfernt. Wie hoch
+  steht der Drachen? 
+\end{minipage}
+
+\droptotalpoints
+
 \newpage
 \question[4]
 \begin{minipage}{0.4\textwidth}
     \includegraphics[scale=0.25]{pythagoras_leiter.PNG}
 \end{minipage}%
 \begin{minipage}[b]{0.5\textwidth}
-    Die abgebildete Leiter hat in zusammengeklapptem Zustand eine Länge von 2,50 Meter. Die Standbreite in ausgeklapptem Zustand beträgt 1,4 Meter. Wie hoch ist die Leiter?
+    Die abgebildete Leiter hat in zusammengeklapptem Zustand eine Länge von 2,50 Meter. Die Standbreite in ausgeklapptem Zustand beträgt 1,3 Meter. Wie hoch ist die Leiter?
 \end{minipage}
 
 \droptotalpoints
@@ -221,15 +226,16 @@ Ein Rechteck ist  30 cm breit und 17 cm breit. Berechne die Länge der Diagonale
     \begin{parts}
     \part[2] Trage die Punkte in das nebenstehende Koordinatensystem ein. \hier \droppoints \vspace*{-1cm}
     \begin{align*}
-        &A(1|1)
-        &B(4|2)
+        &A(2|1)
+        &B(5|5)
     \end{align*}
     \part[2]
-Berechne den Abstand der Punkte A und B. \droppoints
+Berechne den Abstand zwischen Punkt A und Punkt B. \droppoints
     \end{parts}
 \end{minipage}
 
 \droptotalpoints
+
 
 \question
 \begin{minipage}{0.3 \textwidth}
@@ -238,14 +244,15 @@ Berechne den Abstand der Punkte A und B. \droppoints
 \begin{minipage}{0.65 \textwidth}
     Betrachte das unregelmäßige Viereck auf der linken Seite.
     \begin{parts}
-    \part[2] Zeige durch Rechnung, dass der Winkel in Punkt A ein rechter Winkel ist. \droppoints
-    \part[2] Zeige durch Rechnung, dass der Winkel in Punkt C kein rechter Winkel ist. \droppoints
+    \part[3] Zeige durch Rechnung, dass der Winkel in Punkt B kein rechter Winkel ist. \droppoints
+    \part[3] Bewerte, ob der Winkel im Punkt D annähernd ein rechter Winkel ist. \droppoints
     \end{parts}
 \end{minipage}
 
 \droptotalpoints
 
 \begin{comment}
+
 \question[6] Überprüfe durch Rechnung, welche der Dreiecke wirklich einen rechten Winkel besitzt.
 
 \begin{minipage}{0.3\textwidth}

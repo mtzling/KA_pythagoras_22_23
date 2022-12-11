@@ -1877,6 +1877,9 @@ INPUT .\bilder\\BildHier.jpg
 INPUT .\bilder\\BildHier.jpg
 INPUT bilder\\BildHier.jpg
 INPUT .\bilder\\BildHier.jpg
+INPUT .\bilder\\BildHier.jpg
+INPUT bilder\\BildHier.jpg
+INPUT .\bilder\\BildHier.jpg
 INPUT .\bilder\spielfeld_american_football.png
 INPUT .\bilder\spielfeld_american_football.png
 INPUT bilder\spielfeld_american_football.png
@@ -1884,6 +1887,13 @@ INPUT .\bilder\spielfeld_american_football.png
 INPUT .\bilder\spielfeld_american_football.png
 INPUT .\bilder\spielfeld_american_football.png
 INPUT .\bilder\spielfeld_american_football.png
+INPUT .\bilder\pythagoras_drachen.PNG
+INPUT .\bilder\pythagoras_drachen.PNG
+INPUT bilder\pythagoras_drachen.PNG
+INPUT .\bilder\pythagoras_drachen.PNG
+INPUT .\bilder\pythagoras_drachen.PNG
+INPUT .\bilder\pythagoras_drachen.PNG
+INPUT .\bilder\pythagoras_drachen.PNG
 INPUT .\bilder\\pythagoras_leiter.PNG
 INPUT bilder\\pythagoras_leiter.PNG
 INPUT .\bilder\\pythagoras_leiter.PNG
@@ -1922,3 +1932,5 @@ INPUT D:\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT D:\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT D:\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT D:\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

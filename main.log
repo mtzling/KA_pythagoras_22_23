@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  6 DEC 2022 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  11 DEC 2022 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1383,7 +1383,12 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (D:\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (3.49443pt too wide) in paragraph at lines 64--64
+[] [] 
+ []
+
+[1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -1425,34 +1430,33 @@ Non-PDF special ignored!
  <./bilder//BildHier.jpg> <./bilder//smiley.png>]) (aufgaben.tex
 File: ./bilder//BildHier.jpg Graphic file (type jpg)
 <use ./bilder//BildHier.jpg>
+Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 24.
+(pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
+File: ./bilder//BildHier.jpg Graphic file (type jpg)
+<use ./bilder//BildHier.jpg>
 Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 37.
 (pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
 File: ./bilder//BildHier.jpg Graphic file (type jpg)
 <use ./bilder//BildHier.jpg>
-Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 59.
+Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 55.
 (pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
 
-Overfull \hbox (261.76396pt too wide) in paragraph at lines 66--66
+Overfull \hbox (216.24371pt too wide) in paragraph at lines 62--62
  [][] 
  []
 
 
-Overfull \hbox (261.76396pt too wide) in paragraph at lines 74--74
- [][] 
- []
-
-
-Overfull \hbox (261.76396pt too wide) in paragraph at lines 82--82
+Overfull \hbox (216.24371pt too wide) in paragraph at lines 70--70
  [][] 
  []
 
 File: ./bilder//BildHier.jpg Graphic file (type jpg)
 <use ./bilder//BildHier.jpg>
-Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 101.
+Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 89.
 (pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
 File: ./bilder//BildHier.jpg Graphic file (type jpg)
 <use ./bilder//BildHier.jpg>
-Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 109.
+Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 97.
 (pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
 [1
 
@@ -1460,19 +1464,24 @@ Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 109.
 ]
 File: ./bilder//BildHier.jpg Graphic file (type jpg)
 <use ./bilder//BildHier.jpg>
-Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 147.
+Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 135.
 (pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
  Excluding 'comment' comment.
-<bilder/spielfeld_american_football.png, id=52, 238.64156pt x 118.94438pt>
+<bilder/spielfeld_american_football.png, id=55, 238.64156pt x 118.94438pt>
 File: bilder/spielfeld_american_football.png Graphic file (type png)
 <use bilder/spielfeld_american_football.png>
-Package pdftex.def Info: bilder/spielfeld_american_football.png  used on input line 165.
+Package pdftex.def Info: bilder/spielfeld_american_football.png  used on input line 155.
 (pdftex.def)             Requested size: 167.04794pt x 83.26048pt.
- [2 <./bilder/spielfeld_american_football.png>]
-<./bilder//pythagoras_leiter.PNG, id=58, 464.4853pt x 548.0475pt>
+<bilder/pythagoras_drachen.PNG, id=56, 143.03438pt x 164.86594pt>
+File: bilder/pythagoras_drachen.PNG Graphic file (type png)
+<use bilder/pythagoras_drachen.PNG>
+Package pdftex.def Info: bilder/pythagoras_drachen.PNG  used on input line 168.
+(pdftex.def)             Requested size: 143.03401pt x 164.86551pt.
+ [2 <./bilder/spielfeld_american_football.png> <./bilder/pythagoras_drachen.PNG>]
+<./bilder//pythagoras_leiter.PNG, id=63, 464.4853pt x 548.0475pt>
 File: ./bilder//pythagoras_leiter.PNG Graphic file (type png)
 <use ./bilder//pythagoras_leiter.PNG>
-Package pdftex.def Info: ./bilder//pythagoras_leiter.PNG  used on input line 177.
+Package pdftex.def Info: ./bilder//pythagoras_leiter.PNG  used on input line 182.
 (pdftex.def)             Requested size: 116.12103pt x 137.01154pt.
 \pgf@layerbox@axis background=\box159
 \pgf@layerboxsaved@axis background=\box160
@@ -1490,36 +1499,41 @@ Package pdftex.def Info: ./bilder//pythagoras_leiter.PNG  used on input line 177
 \pgf@layerboxsaved@axis descriptions=\box172
 \pgf@layerbox@axis foreground=\box173
 \pgf@layerboxsaved@axis foreground=\box174
-Package pgfplots info on input line 205: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
+Package pgfplots info on input line 210: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
 File: ./bilder//BildHier.jpg Graphic file (type jpg)
 <use ./bilder//BildHier.jpg>
-Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 222.
+Package pdftex.def Info: ./bilder//BildHier.jpg  used on input line 227.
 (pdftex.def)             Requested size: 8.71175pt x 11.78642pt.
-<./bilder//pythagoras_umkehrung.PNG, id=59, 195.73125pt x 140.77594pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+[]\OT1/cmr/m/n/10.95 Berechne den Ab-stand zwi-schen
+ []
+
+<./bilder//pythagoras_umkehrung.PNG, id=64, 195.73125pt x 140.77594pt>
 File: ./bilder//pythagoras_umkehrung.PNG Graphic file (type png)
 <use ./bilder//pythagoras_umkehrung.PNG>
-Package pdftex.def Info: ./bilder//pythagoras_umkehrung.PNG  used on input line 236.
+Package pdftex.def Info: ./bilder//pythagoras_umkehrung.PNG  used on input line 242.
 (pdftex.def)             Requested size: 137.01093pt x 98.54247pt.
- Excluding 'comment' comment.) [3 <./bilder//pythagoras_leiter.PNG> <./bilder//pythagoras_umkehrung.PNG>]
-This exam contains 10 questions with 6 parts, 0 subparts, and 0 subsubparts.
-This exam has a total of 34 points.
+Excluding 'comment' comment.) [3 <./bilder//pythagoras_leiter.PNG> <./bilder//pythagoras_umkehrung.PNG>]
+This exam contains 11 questions with 6 parts, 0 subparts, and 0 subsubparts.
+This exam has a total of 38 points.
 This exam has a total of 0 bonus points.
 (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 56765 strings out of 475385
- 1269176 string characters out of 2793318
- 1876844 words of memory out of 3000000
- 77137 multiletter control sequences out of 15000+600000
+ 56750 strings out of 475385
+ 1269087 string characters out of 2793318
+ 1881615 words of memory out of 3000000
+ 77120 multiletter control sequences out of 15000+600000
  476065 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 146i,16n,147p,2779b,2518s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Marcel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (4 pages, 686173 bytes).
+ 146i,16n,147p,2779b,2520s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\Marcel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (4 pages, 724638 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
