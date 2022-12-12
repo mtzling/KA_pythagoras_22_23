@@ -23,12 +23,39 @@
 \question[3]
 Benenne die restlichen Winkel, Kanten und Ecken des Dreiecks auf korrekte Weise. \hier \bigskip 
 
-\begin{tikzpicture}[thick, scale=0.8]
-    \node [anchor=south east] at (0, 2) {B};
-\draw(0,0) -- (90:2cm) node[midway,left]{a} -- (0:4cm) node[midway,above right]{} -- (0,0) node[midway,below]{};
-\draw[fill=lightgray, thick] (0,0) -- (0:0.8cm) arc (0:90:0.8cm) node at (45:0.5cm) {$\gamma$} -- cycle;
-\draw[fill=lightgray, thick] (4,0) -- ++(180:0.8cm) arc (180:180-atan2(2,4):0.8cm) node at ($(167:0.6cm)+(4,0)$) {} -- cycle;
-\draw[fill=lightgray, thick] (0,2) -- ++(-90:0.8cm) arc (-90:-90+atan2(4,2):0.8cm) node at ($(-60:0.5cm)+(0,2)$) {} -- cycle;
+\begin{tikzpicture}[scale=1.3,very thick,font=\sansmath\sffamily]
+  \tkzDefPoint(0,0){A}
+  \tkzDefPoint(4,0){B}
+  \tkzDefPoint(1,3){C}
+  %\tkzDefPoint(1,0){E}
+
+  % \tkzLabelPoints[below left,font=\sansmath\sffamily](A)
+  % \tkzLabelPoints[below right,font=\sansmath\sffamily](B)
+
+  % Label lines
+  \tkzLabelSegment[right](B,C){}
+  \tkzLabelSegment[left](A,C){$b$}
+
+  % Draw polygon
+  \tkzDrawPolygon[fill=gray!0](A,B,C)
+
+  % Mark angles
+  \tkzMarkAngle[arc=l,size=0.6cm,fill=Green!30](B,A,C)
+  \tkzLabelAngle[pos=0.3](B,A,C){$\alpha$}
+
+  \tkzMarkAngle[arc=l,size=0.6cm,fill=green!30](C,B,A)
+  \tkzLabelAngle[pos=0.45](C,B,A){}
+
+  \tkzMarkAngle[arc=l,size=0.6cm,fill=green!30](A,C,B)
+  \tkzLabelAngle[pos=0.3](A,C,B){}
+
+  %\tkzDrawSegment[dashed](C,E)
+  %\tkzLabelSegment[right](C,E){$h_c$}
+
+  %\draw[thin] pic[draw, angle radius=2mm,"$\cdot$",angle eccentricity=.5]{angle=B--E--C};
+
+  % Draw polygon
+  \tkzDrawPolygon(A,B,C)
 \end{tikzpicture}
 
 \droptotalpoints
@@ -57,7 +84,7 @@ Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
 \begin{minipage}[t][3cm][t]{0.4 \textwidth}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
-\RechtDrei{l}{k}{m}{(1,3)}{(1,1)}{3cm}
+\RechtDrei{p}{q}{r}{(1,3)}{(1,1)}{3cm}
 \end{tikzpicture}\par\bigskip
 \gridsolution{leer}{1cm}
 \end{center}
@@ -89,7 +116,7 @@ Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
     \part[1] Kreuze die richtige Formel für die Berechnung der \textbf{Hypotenusenlänge} an. \hier
     
     \begin{oneparcheckboxes}
-        \choice $c=\sqrt{a+b}$
+        \choice $c=\sqrt{a^2-b^2}$
         \choice $c=a+b$%$
         \choice $c=\sqrt{a^2+b^2}$
         \choice $c=a^2+b^2$
@@ -97,10 +124,10 @@ Formuliere für jedes der Dreiecke den Satz des Pythagoras. \hier
     \part[1] Kreuze die richtige Formel für die Berechnung der \textbf{Kathetenlänge} an. \hier
     
         \begin{oneparcheckboxes}
-        \choice $a=\sqrt{c+b}$
+        \choice $a=\sqrt{c^2-b^2}$
         \choice $a=\sqrt{c^2+b^2}$
         \choice $a=c-b$%$
-        \choice $a=\sqrt{c^2-b^2}$
+        \choice $a=\sqrt{c+b}$
     \end{oneparcheckboxes} \droppoints
 \end{parts}
 \end{minipage}
@@ -113,7 +140,7 @@ Berechne die fehlenden Seitenlängen der unten abgebildeten Dreiecke. \medskip
     \begin{minipage}{0.5 \textwidth}
         \begin{tikzpicture}[scale=.7]
         \begin{scope}[rotate=10] 
-        \draw (0,0) -- node[below] {5cm} (4,0) -- node[above] {c} (0,3) -- node[left] {3cm} (0,0);
+        \draw (0,0) -- node[below] {6cm} (4,0) -- node[above] {c} (0,3) -- node[left] {4cm} (0,0);
         %\draw (0.5, 0) arc [start angle=0, end angle=90, radius=0.5];
         %\draw (0.2,0.2) node {$\cdot$};
         \end{scope}
@@ -122,7 +149,7 @@ Berechne die fehlenden Seitenlängen der unten abgebildeten Dreiecke. \medskip
         \begin{minipage}{0.3 \textwidth}
         \begin{tikzpicture}[scale=.7]
         \begin{scope}[rotate=80] 
-        \draw (0,0) -- node[right] {x} (4,0) -- node[above left] {7m} (0,3) -- node[below] {3m} (0,0);
+        \draw (0,0) -- node[right] {x} (4,0) -- node[above left] {7,2m} (0,3) -- node[below] {3,3m} (0,0);
         %\draw (0.5, 0) arc [start angle=0, end angle=90, radius=0.5];
         %\draw (0.2,0.2) node {$\cdot$};
         \end{scope}
