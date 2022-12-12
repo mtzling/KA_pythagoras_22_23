@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670849397 "d:/Google Drive/Git/KA_pythagoras_22_23/main.tex" "main.pdf" "main" 1670849401
+["pdflatex"] 1670851766 "d:/Google Drive/Git/KA_pythagoras_22_23/main.tex" "main.pdf" "main" 1670851771
   "C:/Users/Marcel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670849393 125531 62080c206000eab29e41f777ce0f1bed ""
   "C:/Users/Marcel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1670351398 12668 014444c732cb3f3e8f330c9fe46c662f ""
   "C:/Users/Marcel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1666693485 10771599 84213986579fd797533e6b0a5c716e85 ""
@@ -367,12 +367,12 @@
   "bilder/pythagoras_drachen.PNG" 1670849222 37908 1f930a6272526e0bbb478b01a4841ba2 ""
   "bilder/spielfeld_american_football.png" 1670849222 131192 4642be0531cfcf63257bbc2f918ab5a5 ""
   "d:/Google Drive/Git/KA_pythagoras_22_23/main.tex" 1670849222 584 dd219cf1e0a434c42de307fcc556e6bd ""
-  "deckblatt.tex" 1670849222 2216 63528834a288219913e890a25d18d95e ""
-  "main.aux" 1670849400 3635 4fccf97adc3a99339468788b3cd23c0f "pdflatex"
+  "deckblatt.tex" 1670851733 2226 ca8171135b63b9b51dc45e6bfc8ff4a6 ""
+  "main.aux" 1670851770 3635 4fccf97adc3a99339468788b3cd23c0f "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1670849222 584 dd219cf1e0a434c42de307fcc556e6bd ""
-  "preamble.sty" 1670849222 8440 ed7fcc934ed0c33bb2a407606747bd97 ""
-  "voreinstellungen.tex" 1670849222 1027 8df86cac13401629b1538f916ad79111 ""
+  "preamble.sty" 1670850685 8443 c85229448e9e976fd880f1ac93e6d05f ""
+  "voreinstellungen.tex" 1670851765 1033 15ec79d09bfc6652c2ce3b92f09c2283 ""
   (generated)
   "main.aux"
   "main.log"
