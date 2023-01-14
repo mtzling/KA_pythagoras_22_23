@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1670851766 "d:/Google Drive/Git/KA_pythagoras_22_23/main.tex" "main.pdf" "main" 1670851771
-  "C:/Users/Marcel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670849393 125531 62080c206000eab29e41f777ce0f1bed ""
+["pdflatex"] 1671020076 "d:/Google Drive/Git/KA_pythagoras_22_23/main.tex" "main.pdf" "main" 1671020085
+  "C:/Users/Marcel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670871993 125531 62080c206000eab29e41f777ce0f1bed ""
   "C:/Users/Marcel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1670351398 12668 014444c732cb3f3e8f330c9fe46c662f ""
   "C:/Users/Marcel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1666693485 10771599 84213986579fd797533e6b0a5c716e85 ""
   "D:/MiKTeX/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1136768654 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -359,7 +359,7 @@
   "D:/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "D:/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "D:/MiKTeX/tex/latex/xstring/xstring.sty" 1626881362 123 a302f2c651a95033260db60e51527ae8 ""
-  "aufgaben.tex" 1670849222 9878 7f4fa12056adb8647963f7ae4ff93b8a ""
+  "aufgaben.tex" 1670960239 9890 e0d657a151e339f196cfb9d38c081b71 ""
   "bilder//BildHier.jpg" 1670849222 1114 7e2e23783a70ce2fc09d76e9d46b1c6e ""
   "bilder//pythagoras_leiter.PNG" 1670849222 210161 89a56a7e910d1aebe431374ac90740ae ""
   "bilder//pythagoras_umkehrung.PNG" 1670849222 12937 006641457d9cc29526970088b05c1bfb ""
@@ -368,11 +368,11 @@
   "bilder/spielfeld_american_football.png" 1670849222 131192 4642be0531cfcf63257bbc2f918ab5a5 ""
   "d:/Google Drive/Git/KA_pythagoras_22_23/main.tex" 1670849222 584 dd219cf1e0a434c42de307fcc556e6bd ""
   "deckblatt.tex" 1670851733 2226 ca8171135b63b9b51dc45e6bfc8ff4a6 ""
-  "main.aux" 1670851770 3635 4fccf97adc3a99339468788b3cd23c0f "pdflatex"
+  "main.aux" 1671020084 3635 4fccf97adc3a99339468788b3cd23c0f "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1670849222 584 dd219cf1e0a434c42de307fcc556e6bd ""
   "preamble.sty" 1670850685 8443 c85229448e9e976fd880f1ac93e6d05f ""
-  "voreinstellungen.tex" 1670851765 1033 15ec79d09bfc6652c2ce3b92f09c2283 ""
+  "voreinstellungen.tex" 1671020075 1033 64c5386050ea044403dbec28d05735f3 ""
   (generated)
   "main.aux"
   "main.log"

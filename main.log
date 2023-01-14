@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  12 DEC 2022 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  14 DEC 2022 13:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1446,12 +1446,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+eur on input line 46.
  (D:\MiKTeX\tex/latex/amsfonts\ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
-)
-Overfull \hbox (3.49443pt too wide) in paragraph at lines 65--65
-[] [] 
- []
-
-[1
+) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -1592,13 +1587,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  58607 strings out of 475385
  1321823 string characters out of 2793318
- 1959990 words of memory out of 3000000
+ 1955990 words of memory out of 3000000
  78928 multiletter control sequences out of 15000+600000
  477520 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  146i,16n,147p,2776b,2520s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Marcel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (4 pages, 724502 bytes).
+Output written on main.pdf (4 pages, 724378 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)
